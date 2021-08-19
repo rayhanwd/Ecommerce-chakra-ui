@@ -217,6 +217,7 @@ const Nav = () => {
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
           <Text
+           size="lg"
           display={{ base: 'none', md: 'inline-flex' }}
           fontSize={'md'}
           fontWeight={600}
