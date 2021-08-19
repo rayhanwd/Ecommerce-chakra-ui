@@ -10,7 +10,7 @@ const [getProduct, setProduct] = useState([]);
       .then(res => res.json())
       .then(json => setProduct(json))
   }, [])
-
+console.log(getProduct)
   return (
     <Container as={Stack} maxW={'6xl'} py={10}>
       <SimpleGrid
