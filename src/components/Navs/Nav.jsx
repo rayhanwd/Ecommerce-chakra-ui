@@ -168,42 +168,20 @@ const DesktopNav = () => {
   
   const  NavItem = [
     {
-      label: 'Inspiration',
-      children: [
-        {
-          label: 'Explore Design Work',
-          subLabel: 'Trending Design to inspire you',
-          to: 'home',
-        },
-        {
-          label: 'New & Noteworthy',
-          subLabel: 'Up-and-coming Designers',
-          to: 'nlog',
-        },
-      ],
+      label: 'Home',
+      to: '/',
     },
     {
-      label: 'Find Work',
-      children: [
-        {
-          label: 'Job Board',
-          subLabel: 'Find your dream design job',
-          to: 'goto',
-        },
-        {
-          label: 'Freelance Projects',
-          subLabel: 'An exclusive list for contract work',
-          to: 'skpagla',
-        },
-      ],
+      label: 'Blog',
+      to: 'blog',
     },
     {
-      label: 'Learn Design',
-      to: 'bbc en',
+      label: 'About us',
+      to: 'aboutus',
     },
     {
-      label: 'Hire Designers',
-      to: 'end',
+      label: 'Contact',
+      to: 'contact',
     },
   ];
 const Nav = () => {
@@ -238,7 +216,7 @@ const Nav = () => {
             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
             fontFamily={'heading'}
             color={'blue.400'} as={'span'}>
-            F valy
+            <Link to={'/'}>F valy</Link>
           </Text>
 
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
