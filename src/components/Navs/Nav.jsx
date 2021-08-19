@@ -191,7 +191,7 @@ const DesktopNav = () => {
 const Nav = () => {
     const { isOpen, onToggle } = useDisclosure();
     return (
-        <Box>
+        <Box mx={{ xl: 24 }}>
       <Flex
         bg={useColorModeValue('white', 'gray.800')}
         color={useColorModeValue('gray.600', 'white')}
