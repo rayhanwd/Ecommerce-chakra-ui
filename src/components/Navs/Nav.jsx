@@ -172,6 +172,10 @@ const DesktopNav = () => {
       to: '/',
     },
     {
+      label: 'Product',
+      to: 'product',
+    },
+    {
       label: 'Blog',
       to: 'blog',
     },
@@ -213,9 +217,11 @@ const Nav = () => {
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
           <Text
-            textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-            fontFamily={'heading'}
-            color={'blue.400'} as={'span'}>
+          display={{ base: 'none', md: 'inline-flex' }}
+          fontSize={'md'}
+          fontWeight={600}
+          color={'dark'}
+          >
             <Link to={'/'}>F valy</Link>
           </Text>
 

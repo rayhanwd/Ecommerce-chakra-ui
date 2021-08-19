@@ -11,7 +11,7 @@ import Admin from './components/admin';
 import Home from './pages/index';
 import Login from './components/auth/Login';
 import SignUp from './components/auth/Signup';
-
+import ProductDetail from './components/Products/ProductDetail';
 function App() {
   return (
     <div className="App">
@@ -22,6 +22,9 @@ function App() {
        </Route>
        <Route path="/login">
          <Login/>
+       </Route>
+       <Route path="/product/:id">
+         <ProductDetail/>
        </Route>
        <Route exact path="/admin">
          <Admin/>
